@@ -11,7 +11,7 @@ namespace DependencyInjectionSample
 {
     [Serializable]
     [ProvideAspectRole("IoC")]
-    public class InjectDependencies : OnMethodBoundaryAspect
+    public class InjectDependenciesAttribute : OnMethodBoundaryAspect
     {
 
         public sealed override void OnEntry(MethodExecutionArgs args)

@@ -18,7 +18,7 @@ namespace DependencyInjectionSample
     {
         public override bool CompileTimeValidate(System.Reflection.MethodBase method)
         {
-            if (!method.CustomAttributes.Any(a => a.AttributeType == typeof(InjectDependencies)))
+            if (!method.CustomAttributes.Any(a => a.AttributeType == typeof(InjectDependenciesAttribute)))
             {
                 Message.Write(SeverityType.Error, "InjectDependences", "No [InjectDependencies] declared on " + method.DeclaringType.FullName + "." + method.Name, method);
                 return false;

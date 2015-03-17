@@ -61,7 +61,7 @@
     <Compile Include="DependencyInjector.cs" />
     <Compile Include="IAuthService.cs" />
     <Compile Include="IDependencyInjector.cs" />
-    <Compile Include="InjectDependencies.cs" />
+    <Compile Include="InjectDependenciesAttribute.cs" />
     <Compile Include="InjectDependenciesTest.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
