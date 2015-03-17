@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DependencyAttribute.cs" />
     <Compile Include="DependencyInjector.cs" />
     <Compile Include="IAuthService.cs" />
     <Compile Include="IDependencyInjector.cs" />

@@ -5,14 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using PostSharp;
 using PostSharp.Aspects;
+using PostSharp.Aspects.Dependencies;
 
 namespace DependencyInjectionSample
 {
     [Serializable]
+    [ProvideAspectRole("IoC")]
     public class InjectDependencies : OnMethodBoundaryAspect
     {
 
-        public override void OnEntry(MethodExecutionArgs args)
+        public sealed override void OnEntry(MethodExecutionArgs args)
         {
             DependencyInjector.CurrentInjector.InjectDependencies(args.Instance);
             base.OnEntry(args);

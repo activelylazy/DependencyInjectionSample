@@ -11,6 +11,7 @@ namespace DependencyInjectionSample
         IList<string> GetGroups(string userId);
     }
 
+    [Dependency]
     public interface IRequireAuthService
     {
         IAuthService AuthService { set; }
